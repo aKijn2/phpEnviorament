@@ -1,32 +1,39 @@
-<?php
-$servername = "mysql";
-$username = "webapp";
-$password = "root";
-$dbname = "webapp";
+<!DOCTYPE html>
+<html lang="eu">
 
-// Crear conexión
-$conn = new mysqli($servername, $username, $password, $dbname);
+<head>
+  <title>Emaitzak inkestarena</title>
+  <link rel="stylesheet" type="text/css" href="estiloa.css" />
+</head>
 
-// Verificar conexión
-if ($conn->connect_error) {
-  die("La conexión ha fallado: " . $conn->connect_error);
-}
+<body>
 
-// Seleccionar todos los datos de la tabla
-$sql = "SELECT id, nombre, email FROM Prueba";
-$result = $conn->query($sql);
+  <h1>Emaitzak inkestarena</h1>
 
-if ($result->num_rows > 0) {
-  // Crear una tabla HTML para mostrar los datos
-  echo "<table><tr><th>ID</th><th>Nombre</th><th>Email</th></tr>";
-  // Recorrer los resultados y añadirlos a la tabla
-  while($row = $result->fetch_assoc()) {
-    echo "<tr><td>" . $row["id"]. "</td><td>" . $row["nombre"]. "</td><td>" . $row["email"]. "</td></tr>";
+  <?php
+  $host = "mysql";
+  $user = "root";
+  $pass = "root";
+  $db = "inkesta";
+
+  $con = mysqli_connect($host, $user, $pass, $db);
+
+  $consulta = "SELECT datuak FROM inkesta";
+  $resultados = mysqli_query($con, $consulta);
+
+  $kaixo = array();
+  
+  while ($rowados = mysqli_fetch_assoc($resultados)) {
+    $kaixo[] = $rowados['datuak'];
   }
-  echo "</table>";
-} else {
-  echo "No se encontraron resultados";
-}
+  
+  echo "Datuak: " . implode(" ", $kaixo);
 
-$conn->close();
-?>
+  mysqli_close($con);
+  ?>
+
+  <a href="inkesta.html">Inkestara vueltatu</a>
+
+</body>
+
+</html>

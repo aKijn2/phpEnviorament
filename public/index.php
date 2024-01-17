@@ -1,19 +1,20 @@
-<html> 
- <head> 
-   <title>Nuestro primer ejemplo en PHP 7</title> 
- </head> 
- 
-  <body>
- 
-  <?php
- 
- echo "¡Hola mundo! <br>";
- 
- for($i = 0; $i < 10; $i++)
-  {
-   echo "Línea número: ".$i."<br>";
-  }
- ?>
- 
-  </body> 
-  </html>
+<?php
+$host = "mysql";
+$user = "root";
+$pass = "root";
+$db = "inkesta";
+$data = $_POST["botua"];
+
+$con = mysqli_connect($host, $user, $pass, $db);
+
+$sql = "INSERT INTO `inkesta` (`datuak`) VALUES ('$data')";
+$ejekutatua = mysqli_query($con, $sql);
+
+if ($ejekutatua) {
+  echo "<p>Datuak ondo gorde dira</p>";
+} else {
+  echo "<p>Errorea datuak ez dira gorde</p>";
+}
+
+mysqli_close($con);
+?>
