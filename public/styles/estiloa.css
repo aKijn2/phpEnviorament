@@ -1,0 +1,42 @@
+/* styles/estiloa.css */
+
+#div_login {
+    max-width: 400px;
+    margin: 0 auto;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .textbox {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+  }
+  
+  #but_submit {
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #but_submit:hover {
+    background-color: #45a049;
+  }
+  
+  a#register {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  a#register:hover {
+    text-decoration: underline;
+  }
+  
