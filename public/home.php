@@ -44,28 +44,83 @@ if (isset($_POST['but_submit'])) {
     }
 }
 
-// Verificar y cerrar sesión si es necesario
 if (isset($_POST['but_logout'])) {
     logout();
 }
 
-// Verificar el inicio de sesión
 checkLoginStatus();
 ?>
 
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <!-- Agrega títulos, estilos u otros elementos del encabezado si es necesario -->
-    <title>Homepage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFORMATIKA DENDA</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 50px;
+            font-family: 'Courier New', Courier, monospace;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 30px;
+            font-family: 'Courier New', Courier, monospace;
+            display: inline-block;
+            position: relative;
+            background: darkgray;
+            width: 28em;
+            border-radius: 25px;
+            box-shadow: 0 9px #999;
+        }
+
+        h3 {
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            margin-bottom: 20px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input[type="submit"] {
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #cfcfcf;
+            border: none;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 9px #999;
+            cursor: pointer;
+            width: 150px;
+            height: 50px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Homepage</h1>
-
-    <!-- Formulario para cerrar sesión -->
+    <h1>INFORMATIKA DENDA</h1>
+    <h2>Ongi etorri
+        <?php echo $_SESSION['uname']; ?>
+    </h2>
+    <h3>Webgune honetan informazioa aurkituko duzu gure dendari buruz.</h3>
     <form method='post' action="">
+        <input type="submit" value="Informazioa">
+        <input type="submit" value="Produktuak">
         <input type="submit" value="Logout" name="but_logout">
     </form>
 </body>

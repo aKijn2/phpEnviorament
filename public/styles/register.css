@@ -1,5 +1,3 @@
-/* styles/register.css */
-
 #div_login {
     position: absolute;
     top: 50%;
@@ -24,7 +22,7 @@
   
   #register {
     width: 100%;
-    background-color: gray;
+    background-color: darkgray;
     color: white;
     padding: 10px;
     border: none;
@@ -35,7 +33,7 @@
   }
   
   #register:hover {
-    background-color: darkgray;
+    background-color: gray;
   }
   
   a#loginLink {
@@ -44,7 +42,7 @@
     margin-top: 10px;
     text-decoration: none;
     width: 95%;
-    background-color: gray;
+    background-color: darkgray;
     color: white;
     padding: 10px;
     border: none;
@@ -55,7 +53,7 @@
   }
   
   a#loginLink:hover {
-    background-color: darkgray;
+    background-color: gray;
   }
   
 
