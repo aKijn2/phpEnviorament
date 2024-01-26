@@ -3,7 +3,7 @@ session_start();
 $host = "mysql"; /* Host name */
 $user = "root"; /* User */
 $password = "root"; /* Password */
-$dbname = "batAriketa"; /* Database name */
+$dbname = "contact_form_data"; /* Database name */
 
 $con = mysqli_connect($host, $user, $password, $dbname);
 // Check connection

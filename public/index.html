@@ -1,45 +1,532 @@
 <!DOCTYPE html>
-<html lang="eu">
+<html lang="en">
   <head>
-    <title>Formulario sinplea</title>
-    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Asa - Denontzako denda</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
   </head>
+  <body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars ms-1"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#services">ZERBITZUAK</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">PORTAFOLIOA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">HISTORIA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">KONTAKTUA</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+      <div class="container">
+        <div class="masthead-subheading">Ongi hetorri nire estudiora!</div>
+        <div class="masthead-heading text-uppercase">
+          MILA ESKER PASATZEAGATIK
+        </div>
+        <a class="btn btn-primary btn-xl text-uppercase" href="#services"
+          >ESAIDAZU GEHIAGO</a
+        >
+      </div>
+    </header>
+    <!-- Services-->
+    <section class="page-section" id="services">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">Zerbitzuak</h2>
+          <h3 class="section-subheading text-muted">
+            Nik, eskaintzen dizuedan zerbitzuak.
+          </h3>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="my-3">E-Commerce</h4>
+            <p class="text-muted">
+              Webgune honek e-commerce ez dizue eskaintzen baino jakin dezazuen
+              beste webgunea bisitatzen baduzue e-commerce dala.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="my-3">Ikasi Responsive Diseñua</h4>
+            <p class="text-muted">
+              Webgune honek responsive diseñoa eskaintzen dizue, nola egiten den
+              eta nola ikasi dezakezuen.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="my-3">Web Segurtasuna</h4>
+            <p class="text-muted">
+              Webgune honek segurtasunaren inguruko informazioa ematen dizue,
+              nola segurtasun handia izan dezakezuen webgunea egiten baduzue.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Grid-->
+    <section class="page-section bg-light" id="portfolio">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">Portafolioa</h2>
+          <h3 class="section-subheading text-muted">
+            Nire webguneak eta nire lanak.
+          </h3>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="portfolio-item">
+              <a
+                class="portfolio-link"
+                data-bs-toggle="modal"
+                href="#portfolioModal1"
+              >
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img
+                  class="img-fluid"
+                  src="assets/img/portfolio/1.jpg"
+                  alt="..."
+                />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">Threads</div>
+                <div class="portfolio-caption-subheading text-muted">
+                  Illustration
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <!-- Portfolio item 2-->
+            <div class="portfolio-item">
+              <a
+                class="portfolio-link"
+                data-bs-toggle="modal"
+                href="#portfolioModal2"
+              >
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img
+                  class="img-fluid"
+                  src="assets/img/portfolio/2.jpg"
+                  alt="..."
+                />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">Explore</div>
+                <div class="portfolio-caption-subheading text-muted">
+                  Graphic Design
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <!-- Portfolio item 3-->
+            <div class="portfolio-item">
+              <a
+                class="portfolio-link"
+                data-bs-toggle="modal"
+                href="#portfolioModal3"
+              >
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img
+                  class="img-fluid"
+                  src="assets/img/portfolio/3.jpg"
+                  alt="..."
+                />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">Finish</div>
+                <div class="portfolio-caption-subheading text-muted">
+                  Identity
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+            <!-- Portfolio item 4-->
+            <div class="portfolio-item">
+              <a
+                class="portfolio-link"
+                data-bs-toggle="modal"
+                href="#portfolioModal4"
+              >
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img
+                  class="img-fluid"
+                  src="assets/img/portfolio/4.jpg"
+                  alt="..."
+                />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">Lines</div>
+                <div class="portfolio-caption-subheading text-muted">
+                  Branding
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+            <!-- Portfolio item 5-->
+            <div class="portfolio-item">
+              <a
+                class="portfolio-link"
+                data-bs-toggle="modal"
+                href="#portfolioModal5"
+              >
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img
+                  class="img-fluid"
+                  src="assets/img/portfolio/5.jpg"
+                  alt="..."
+                />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">Southwest</div>
+                <div class="portfolio-caption-subheading text-muted">
+                  Website Design
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <!-- Portfolio item 6-->
+            <div class="portfolio-item">
+              <a
+                class="portfolio-link"
+                data-bs-toggle="modal"
+                href="#portfolioModal6"
+              >
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img
+                  class="img-fluid"
+                  src="assets/img/portfolio/6.jpg"
+                  alt="..."
+                />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">Window</div>
+                <div class="portfolio-caption-subheading text-muted">
+                  Photography
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About-->
+    <section class="page-section" id="about">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">Historia</h2>
+          <h3 class="section-subheading text-muted">
+            Boostrap5 esker webgune hau egiten ari naiz.
+          </h3>
+        </div>
+        <ul class="timeline">
+          <li>
+            <div class="timeline-image">
+              <img
+                class="rounded-circle img-fluid"
+                src="assets/img/about/1.jpg"
+                alt="..."
+              />
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>2009-2011</h4>
+                <h4 class="subheading">Our Humble Beginnings</h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+                  ut voluptatum eius sapiente, totam reiciendis temporibus qui
+                  quibusdam, recusandae sit vero unde, sed, incidunt et ea quo
+                  dolore laudantium consectetur!
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <img
+                class="rounded-circle img-fluid"
+                src="assets/img/about/2.jpg"
+                alt="..."
+              />
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>March 2011</h4>
+                <h4 class="subheading">An Agency is Born</h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+                  ut voluptatum eius sapiente, totam reiciendis temporibus qui
+                  quibusdam, recusandae sit vero unde, sed, incidunt et ea quo
+                  dolore laudantium consectetur!
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-image">
+              <img
+                class="rounded-circle img-fluid"
+                src="assets/img/about/3.jpg"
+                alt="..."
+              />
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>December 2015</h4>
+                <h4 class="subheading">Transition to Full Service</h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+                  ut voluptatum eius sapiente, totam reiciendis temporibus qui
+                  quibusdam, recusandae sit vero unde, sed, incidunt et ea quo
+                  dolore laudantium consectetur!
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <img
+                class="rounded-circle img-fluid"
+                src="assets/img/about/4.jpg"
+                alt="..."
+              />
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>July 2020</h4>
+                <h4 class="subheading">Phase Two Expansion</h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+                  ut voluptatum eius sapiente, totam reiciendis temporibus qui
+                  quibusdam, recusandae sit vero unde, sed, incidunt et ea quo
+                  dolore laudantium consectetur!
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <h4>
+                Be Part
+                <br />
+                Of Our
+                <br />
+                Story!
+              </h4>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Contact-->
+    <section class="page-section" id="contact">
+        <div class="container">
+          <div class="text-center">
+            <h2 class="section-heading text-uppercase">Harremanean jarri</h2>
+            <h3 class="section-subheading text-muted">
+              Edozein zalantza badin badazue jarri gurkein kontaktuan.
+            </h3>
+          </div>        
+        <!-- * * * * * * * * * * * * * * *-->
+        <!-- * * SB Forms Contact Form * *-->
+        <!-- * * * * * * * * * * * * * * *-->
+        <form id="contactForm">
+            <div class="row align-items-stretch mb-5">
+              <div class="col-md-6">
+              <div class="form-group">
+                <!-- Name input-->
+                <input
+                  class="form-control"
+                  id="name"
+                  type="text"
+                  placeholder="Your Name *"
+                  data-sb-validations="required"
+                />
+                <div class="invalid-feedback" data-sb-feedback="name:required">
+                  Izena derrigorrezkoa da.
+                </div>
+              </div>
+              <div class="form-group">
+                <!-- Email address input-->
+                <input
+                  class="form-control"
+                  id="email"
+                  type="email"
+                  placeholder="Your Email *"
+                  data-sb-validations="required,email"
+                />
+                <div class="invalid-feedback" data-sb-feedback="email:required">
+                  Korreoa derrigorrezkoa da.
+                </div>
+                <div class="invalid-feedback" data-sb-feedback="email:email">
+                  Korreoa ez da zuzena.
+                </div>
+              </div>
+              <div class="form-group mb-md-0">
+                <!-- Phone number input-->
+                <input
+                  class="form-control"
+                  id="phone"
+                  type="tel"
+                  placeholder="Your Phone *"
+                  data-sb-validations="required"
+                />
+                <div class="invalid-feedback" data-sb-feedback="phone:required">
+                  Telefono zenbaki bat derrigorrezkoa da.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group form-group-textarea mb-md-0">
+                <!-- Message input-->
+                <textarea
+                  class="form-control"
+                  id="message"
+                  placeholder="Your Message *"
+                  data-sb-validations="required"
+                ></textarea>
+                <div
+                  class="invalid-feedback"
+                  data-sb-feedback="message:required"
+                >
+                  Mezua beharrezkoa da.
+                </div>
+                <div id="messageContainer"></div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <button
+              class="btn btn-primary btn-xl text-uppercase"
+              id="submitButton"
+              type="button"
+            >
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- Custom script for form handling -->
+        <script src= "js/form.js"></script>
+    <!-- Footer-->
+    <footer class="footer py-4">
+      <div class="container">
+        <div class="row align-items-center">
 
-  <body>
-    <h1>Formulario sinplea</h1>
-
-    <h2>Abestiak bilatzea</h2>
-
-    <form class="borde" action="segurua1.php" method="POST">
-      <p>
-        <label>Bilatu beharreko testua:</label>
-        <input type="TEXT" size="40" name="textua" />
-      </p>
-
-      <p>
-        <label>Bilatu hemen:</label>
-        <input type="RADIO" name="non" value="izenburua" />Abestien izenburuak
-        <input type="RADIO" name="non" value="album" />Album-izenak
-        <input type="RADIO" name="non" value="biak" checked />Biak
-      </p>
-
-      <p>
-        <label>Genero musikala:</label>
-        <select name="genero">
-          <option selected>Denak</option>
-          <option>Akustika</option>
-          <option>Soinu banda</option>
-          <option>Blues</option>
-          <option>Elektronika</option>
-          <option>Folka</option>
-          <option>Jazza</option>
-          <option>New Agea</option>
-          <option>Popa</option>
-          <option>Rocka</option>
-        </select>
-      </p>
-
-      <p><input type="SUBMIT" name="bilatu" value="Bilatu" /></p>
-    </form>
+          <div>
+          <div class="col-lg-4 text-lg-end">
+            <a class="link-dark text-decoration-none me-3" href="#!"
+              >Privacy Policy</a
+            >
+            <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
   </body>
 </html>
